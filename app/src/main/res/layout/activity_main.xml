@@ -50,6 +50,7 @@
             android:layout_gravity="center"
             android:fontFamily="monospace"
             android:hint="Enter your name"
+            android:inputType="textPersonName"
             android:padding="10dp" />
     </LinearLayout>
 
@@ -76,6 +77,7 @@
             android:layout_gravity="center"
             android:fontFamily="monospace"
             android:hint="Enter your email"
+            android:inputType="textEmailAddress"
             android:padding="10dp" />
     </LinearLayout>
 
