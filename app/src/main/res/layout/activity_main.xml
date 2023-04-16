@@ -9,197 +9,87 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Principal"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/principal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:padding="10dp"
-            android:text="Registration Form"
-            android:textAlignment="center"
-            android:textSize="30dp"
-            android:textStyle="bold" />
+            android:layout_gravity="center"
+            android:hint="Enter principle amount"
+            android:inputType="numberDecimal" />
 
     </LinearLayout>
-
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-
-            android:layout_margin="10dp"
-            android:fontFamily="monospace"
             android:padding="10dp"
-            android:text="Name"
-            android:textSize="20dp"
-            android:textStyle="bold" />
+            android:text="Rate"
+            android:textSize="25dp" />
 
         <EditText
-            android:id="@+id/name"
-            android:layout_width="wrap_content"
+            android:id="@+id/rate"
+            android:layout_width="187dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:fontFamily="monospace"
-            android:hint="Enter your name"
-            android:inputType="textPersonName"
-            android:padding="10dp" />
+            android:layout_marginLeft="45dp"
+            android:hint="Enter interest rate"
+            android:inputType="numberDecimal" />
+
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:fontFamily="monospace"
             android:padding="10dp"
-            android:text="Email"
-            android:textSize="20dp"
-            android:textStyle="bold" />
+            android:text="Time"
+            android:textSize="25dp" />
 
         <EditText
-            android:id="@+id/email"
-            android:layout_width="wrap_content"
+            android:id="@+id/time"
+            android:layout_width="189dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:fontFamily="monospace"
-            android:hint="Enter your email"
-            android:inputType="textEmailAddress"
-            android:padding="10dp" />
+            android:layout_marginLeft="40dp"
+            android:hint="Enter time period"
+            android:inputType="numberDecimal" />
+
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity=""
-            android:layout_margin="10dp"
-            android:fontFamily="monospace"
-            android:padding="10dp"
-            android:text="Password"
-            android:textSize="20dp"
-            android:textStyle="bold" />
-
-        <EditText
-            android:id="@+id/password"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:fontFamily="monospace"
-            android:hint="Enter your Password"
-            android:inputType="textPassword"
-            android:padding="10dp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:fontFamily="monospace"
-            android:padding="5dp"
-            android:text="Select Gender"
-            android:textSize="20dp"
-            android:textStyle="bold" />
-        <RadioGroup
-            android:id="@+id/gender"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:orientation="horizontal"
-            android:padding="10dp">
-
-            <RadioButton
-                android:id="@+id/male"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:checked="true"
-                android:text="Male" />
-
-            <RadioButton
-                android:id="@+id/female"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Female" />
-        </RadioGroup>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:fontFamily="monospace"
-            android:padding="5dp"
-            android:text="Select Country"
-            android:textSize="20dp"
-            android:textStyle="bold" />
-        <Spinner
-            android:id="@+id/country"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:entries="@array/countries"
-            android:padding="10dp" />
-    </LinearLayout>
-
-
-    <CheckBox
-        android:id="@+id/terms"
+    <Button
+        android:id="@+id/calculateBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="10dp"
-        android:padding="10dp"
-        android:text="Accept all the terms and conditions." />
+        android:text="Calculate" />
 
-
-    <Button
+    <TextView
+        android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Register"
-        android:id="@+id/registerBtn"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Already have an account? Login here"
-        android:textStyle="italic"
-        android:layout_gravity="center">
-    </TextView>
-
-
-
-
+        android:text=""
+        android:textSize="30dp" />
 
 </LinearLayout>

@@ -1,9 +1,3 @@
 <resources>
-    <string name="app_name">My Application</string>
-    <string-array name ="countries">
-        <item>Nepal</item>
-        <item>India</item>
-        <item>Usa</item>
-        <item>Russia</item>
-    </string-array>
+    <string name="app_name">Simple Interest Calculator</string>
 </resources>
